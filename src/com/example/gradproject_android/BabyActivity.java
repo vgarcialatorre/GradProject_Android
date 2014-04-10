@@ -1,7 +1,5 @@
 package com.example.gradproject_android;
 
-
-
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
@@ -43,7 +41,7 @@ public class BabyActivity extends Activity{
  
         // Enabling Up / Back navigation
         actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setIcon(R.drawable.ic_menu);
+      //  actionBar.setIcon(R.drawable.ic_menu);
 
 
 		// Login button Click Event
