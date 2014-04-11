@@ -4,13 +4,28 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TexView
+    <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:padding="10dip"
-        android:textColor="#ffffff"
+        android:textColor="#999999"
         android:textSize="25dip"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:text = "@string/your_lists" />
+    
+    <View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"/>
+    
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textColor="#999999"
+        android:textSize="25dip"
+        android:textStyle="bold"
+        android:text = "@string/invited_lists" />
 
    <Button android:id="@+id/addList_button"
         android:layout_width="wrap_content"

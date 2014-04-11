@@ -11,9 +11,12 @@ public final class R {
     public static final class array {
         /**  Nav Drawer List Item Icons 
  Keep them in order as the titles are in 
+         <item>@drawable/ic_whats_hot</item>
+ 
          */
         public static final int nav_drawer_icons=0x7f070001;
         /**  Nav Drawer Menu Items 
+  <item>What\'s Hot</item> 
          */
         public static final int nav_drawer_items=0x7f070000;
     }
@@ -61,77 +64,81 @@ public final class R {
         public static final int demo_btn=0x7f020014;
         public static final int demoapp_btn=0x7f020015;
         public static final int essentials=0x7f020016;
-        public static final int events_05=0x7f020017;
-        public static final int gift_logo=0x7f020018;
-        public static final int gift_registry=0x7f020019;
-        public static final int gifts_btn=0x7f02001a;
-        public static final int hampers_btn=0x7f02001b;
-        public static final int home_01=0x7f02001c;
-        public static final int ic_communities=0x7f02001d;
-        public static final int ic_drawer=0x7f02001e;
-        public static final int ic_home=0x7f02001f;
-        public static final int ic_launcher=0x7f020020;
-        public static final int ic_pages=0x7f020021;
-        public static final int ic_people=0x7f020022;
-        public static final int ic_photos=0x7f020023;
-        public static final int ic_whats_hot=0x7f020024;
-        public static final int item_boxes=0x7f020025;
-        public static final int items_btn=0x7f020026;
-        public static final int list_focused_gradp=0x7f020027;
-        public static final int list_item_bg_normal=0x7f020028;
-        public static final int list_item_bg_pressed=0x7f020029;
-        public static final int list_pressed_gradp=0x7f02002a;
-        public static final int list_selector=0x7f02002b;
-        public static final int lists_03=0x7f02002c;
-        public static final int logout_07=0x7f02002d;
-        public static final int m_s_logo=0x7f02002e;
-        public static final int menu_dropdown_panel_gradp=0x7f02002f;
-        public static final int ms_logo=0x7f020030;
-        public static final int planning=0x7f020031;
-        public static final int profile_02=0x7f020032;
-        public static final int progress_bg_gradp=0x7f020033;
-        public static final int progress_primary_gradp=0x7f020034;
-        public static final int progress_secondary_gradp=0x7f020035;
-        public static final int scanners_04=0x7f020036;
-        public static final int settings_06=0x7f020037;
-        public static final int sidebar_btn=0x7f020038;
-        public static final int sidebar_calculator=0x7f020039;
-        public static final int sidebar_home=0x7f02003a;
-        public static final int sidebar_list=0x7f02003b;
-        public static final int sidebar_logout=0x7f02003c;
-        public static final int sidebar_profile=0x7f02003d;
-        public static final int sidebar_scanner=0x7f02003e;
-        public static final int sidebar_search=0x7f02003f;
-        public static final int sidebar_settings=0x7f020040;
-        public static final int signup_btn=0x7f020041;
-        public static final int spinner_ab_default_gradp=0x7f020042;
-        public static final int spinner_ab_disabled_gradp=0x7f020043;
-        public static final int spinner_ab_focused_gradp=0x7f020044;
-        public static final int spinner_ab_pressed_gradp=0x7f020045;
-        public static final int stork=0x7f020046;
-        public static final int style_edits=0x7f020047;
-        public static final int tab_selected_focused_gradp=0x7f020048;
-        public static final int tab_selected_gradp=0x7f020049;
-        public static final int tab_selected_pressed_gradp=0x7f02004a;
-        public static final int tab_unselected_focused_gradp=0x7f02004b;
-        public static final int tab_unselected_gradp=0x7f02004c;
-        public static final int tab_unselected_pressed_gradp=0x7f02004d;
-        public static final int top_bar=0x7f02004e;
-        public static final int topbar=0x7f02004f;
+        public static final int events_04=0x7f020017;
+        public static final int events_05=0x7f020018;
+        public static final int gift_logo=0x7f020019;
+        public static final int gift_registry=0x7f02001a;
+        public static final int gifts_btn=0x7f02001b;
+        public static final int hampers_btn=0x7f02001c;
+        public static final int home_01=0x7f02001d;
+        public static final int ic_communities=0x7f02001e;
+        public static final int ic_drawer=0x7f02001f;
+        public static final int ic_home=0x7f020020;
+        public static final int ic_launcher=0x7f020021;
+        public static final int ic_pages=0x7f020022;
+        public static final int ic_people=0x7f020023;
+        public static final int ic_photos=0x7f020024;
+        public static final int ic_whats_hot=0x7f020025;
+        public static final int item_boxes=0x7f020026;
+        public static final int items_btn=0x7f020027;
+        public static final int list_focused_gradp=0x7f020028;
+        public static final int list_item_bg_normal=0x7f020029;
+        public static final int list_item_bg_pressed=0x7f02002a;
+        public static final int list_pressed_gradp=0x7f02002b;
+        public static final int list_selector=0x7f02002c;
+        public static final int lists_03=0x7f02002d;
+        public static final int logout_05=0x7f02002e;
+        public static final int logout_07=0x7f02002f;
+        public static final int m_s_logo=0x7f020030;
+        public static final int menu_dropdown_panel_gradp=0x7f020031;
+        public static final int ms_logo=0x7f020032;
+        public static final int mylists_02=0x7f020033;
+        public static final int planning=0x7f020034;
+        public static final int profile_02=0x7f020035;
+        public static final int progress_bg_gradp=0x7f020036;
+        public static final int progress_primary_gradp=0x7f020037;
+        public static final int progress_secondary_gradp=0x7f020038;
+        public static final int qrscanner_03=0x7f020039;
+        public static final int scanners_04=0x7f02003a;
+        public static final int settings_06=0x7f02003b;
+        public static final int sidebar_btn=0x7f02003c;
+        public static final int sidebar_calculator=0x7f02003d;
+        public static final int sidebar_home=0x7f02003e;
+        public static final int sidebar_list=0x7f02003f;
+        public static final int sidebar_logout=0x7f020040;
+        public static final int sidebar_profile=0x7f020041;
+        public static final int sidebar_scanner=0x7f020042;
+        public static final int sidebar_search=0x7f020043;
+        public static final int sidebar_settings=0x7f020044;
+        public static final int signup_btn=0x7f020045;
+        public static final int spinner_ab_default_gradp=0x7f020046;
+        public static final int spinner_ab_disabled_gradp=0x7f020047;
+        public static final int spinner_ab_focused_gradp=0x7f020048;
+        public static final int spinner_ab_pressed_gradp=0x7f020049;
+        public static final int stork=0x7f02004a;
+        public static final int style_edits=0x7f02004b;
+        public static final int tab_selected_focused_gradp=0x7f02004c;
+        public static final int tab_selected_gradp=0x7f02004d;
+        public static final int tab_selected_pressed_gradp=0x7f02004e;
+        public static final int tab_unselected_focused_gradp=0x7f02004f;
+        public static final int tab_unselected_gradp=0x7f020050;
+        public static final int tab_unselected_pressed_gradp=0x7f020051;
+        public static final int top_bar=0x7f020052;
+        public static final int topbar=0x7f020053;
     }
     public static final class id {
         public static final int Stork=0x7f0a0003;
-        public static final int action_gift=0x7f0a002c;
-        public static final int action_logo=0x7f0a002b;
-        public static final int action_settings=0x7f0a002d;
-        public static final int addList_button=0x7f0a001c;
+        public static final int action_gift=0x7f0a002f;
+        public static final int action_logo=0x7f0a002e;
+        public static final int action_settings=0x7f0a0030;
+        public static final int addList_button=0x7f0a001f;
         public static final int baby_cloud=0x7f0a0004;
-        public static final int btnGuest=0x7f0a0028;
-        public static final int btnLinkToLoginScreen=0x7f0a0027;
-        public static final int btnLinkToRegisterScreen=0x7f0a0021;
-        public static final int btnLogin=0x7f0a0020;
+        public static final int btnGuest=0x7f0a002b;
+        public static final int btnLinkToLoginScreen=0x7f0a002a;
+        public static final int btnLinkToRegisterScreen=0x7f0a0024;
+        public static final int btnLogin=0x7f0a0023;
         public static final int btnLogout=0x7f0a0016;
-        public static final int btnRegister=0x7f0a0026;
+        public static final int btnRegister=0x7f0a0029;
         public static final int button1=0x7f0a0005;
         public static final int content_frame=0x7f0a0017;
         public static final int counter=0x7f0a001b;
@@ -149,23 +156,26 @@ public final class R {
         public static final int imageView7=0x7f0a000d;
         public static final int imageView8=0x7f0a000e;
         public static final int imageView9=0x7f0a0010;
+        public static final int invited_lists=0x7f0a001e;
         public static final int left_drawer=0x7f0a0018;
         public static final int list_slidermenu=0x7f0a0002;
-        public static final int loginEmail=0x7f0a001d;
-        public static final int loginPassword=0x7f0a001e;
-        public static final int login_error=0x7f0a001f;
-        public static final int product_label=0x7f0a0029;
-        public static final int registerEmail=0x7f0a0023;
-        public static final int registerName=0x7f0a0022;
-        public static final int registerPassword=0x7f0a0024;
-        public static final int register_error=0x7f0a0025;
-        public static final int scan_button=0x7f0a002a;
+        public static final int loginEmail=0x7f0a0020;
+        public static final int loginPassword=0x7f0a0021;
+        public static final int login_error=0x7f0a0022;
+        public static final int product_label=0x7f0a002c;
+        public static final int registerEmail=0x7f0a0026;
+        public static final int registerName=0x7f0a0025;
+        public static final int registerPassword=0x7f0a0027;
+        public static final int register_error=0x7f0a0028;
+        public static final int scan_button=0x7f0a002d;
+        public static final int separator=0x7f0a001d;
         public static final int textView1=0x7f0a0009;
         public static final int textView2=0x7f0a000f;
         public static final int textView3=0x7f0a0011;
         public static final int textView4=0x7f0a0013;
         public static final int textView5=0x7f0a0015;
         public static final int title=0x7f0a001a;
+        public static final int your_lists=0x7f0a001c;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -192,16 +202,18 @@ public final class R {
         public static final int clothing=0x7f060006;
         /**  Content Description 
          */
-        public static final int desc_list_item_icon=0x7f06000f;
+        public static final int desc_list_item_icon=0x7f060011;
         public static final int drawer_close=0x7f06000e;
         public static final int drawer_open=0x7f06000d;
         public static final int essentials=0x7f060007;
         public static final int guest_visit=0x7f06000b;
+        public static final int invited_lists=0x7f060010;
         public static final int my_account=0x7f06000a;
         public static final int planning=0x7f060004;
         public static final int scan=0x7f060002;
         public static final int sign_up_now=0x7f060003;
         public static final int view_demo_app=0x7f060009;
+        public static final int your_lists=0x7f06000f;
     }
     public static final class style {
         /** 
@@ -229,6 +241,7 @@ public final class R {
         /**  Application theme. 
          */
         public static final int AppTheme=0x7f080001;
+        public static final int Divider=0x7f080004;
         /**  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int LoginStyle=0x7f080002;

@@ -27,5 +27,11 @@
         <item name="android:background">#9dc8e0</item>
          <item name="android:icon">@drawable/m_s_logo</item>
     </style>
+    
+     <style name="Divider">
+         <item name="android:layout_width">match_parent</item>
+         <item name="android:layout_height">1dp</item>
+         <item name="android:background">#FF0000</item>
+     </style>
      
 </resources>

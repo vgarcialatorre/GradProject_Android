@@ -16,27 +16,29 @@
     <string name="add_list">Add List</string>
     <string name="drawer_open">Slider Menu Opened</string>
     <string name="drawer_close">Slider Menu Closed</string>
+    <string name="your_lists">Your Lists</string>
+    <string name="invited_lists">Lists You\'ve Been Invited To</string>
 
     <!-- Nav Drawer Menu Items -->
     <string-array name="nav_drawer_items">
         <item>Home</item>
-        <item>Find People</item>
-        <item>Photos</item>
-        <item>Communities</item>
-        <item>Pages</item>
-        <item>What\'s Hot</item>
+        <item>My Lists</item>
+        <item>Scanner</item>
+        <item>Events</item>
+        <item>Logout</item>
+       <!--  <item>What\'s Hot</item> -->
     </string-array>
 
     <!-- Nav Drawer List Item Icons -->
     <!-- Keep them in order as the titles are in -->
     <array name="nav_drawer_icons">
-        <item>@drawable/ic_home</item>
-        <item>@drawable/ic_people</item>
-        <item>@drawable/ic_photos</item>
-        <item>@drawable/ic_communities</item>
-        <item>@drawable/ic_pages</item>
-        <item>@drawable/ic_whats_hot</item>
-    </array>
+        <item>@drawable/home_01</item>
+        <item>@drawable/mylists_02</item>
+        <item>@drawable/qrscanner_03</item>
+        <item>@drawable/events_04</item>
+        <item>@drawable/logout_05</item>
+<!--         <item>@drawable/ic_whats_hot</item>
+ -->    </array>
 
     <!-- Content Description -->
     <string name="desc_list_item_icon">Item Icon</string>
