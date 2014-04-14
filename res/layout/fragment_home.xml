@@ -14,13 +14,19 @@
         android:textSize="25dip"
         android:textStyle="bold" />
 
+    <ListView
+      android:id="@id/android:list"
+      android:layout_width="fill_parent"
+      android:layout_height="300dp"
+      android:layout_below="@+id/your_lists" >
+  	</ListView>
     <!-- <View style="@style/Divider"/> -->
 
     <View
         android:id="@+id/separator"
         android:layout_width="fill_parent"
         android:layout_height="2dip"
-        android:layout_below="@+id/your_lists"
+        android:layout_below="@id/android:list"
         android:layout_centerVertical="true"
         android:background="#9dc8e0" />
 
@@ -28,7 +34,7 @@
         android:id="@+id/invited_lists"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/your_lists"
+        android:layout_below="@+id/separator"
         android:padding="10dip"
         android:text="@string/invited_lists"
         android:textColor="#999999"
