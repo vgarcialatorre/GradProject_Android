@@ -15,7 +15,7 @@ public class OpeningMenuPage extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.opening_menu_page);
+		setContentView(R.layout.main_menu);
 		
 		getActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM); 
 		getActionBar().setCustomView(R.layout.action_bar_layout);

@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class IndividualList  extends Activity implements OnClickListener{
+public class IndividualWishlistPage  extends Activity implements OnClickListener{
 	
 	private Button scanBtn;
 	private TextView formatTxt, contentTxt;
@@ -20,7 +20,7 @@ public class IndividualList  extends Activity implements OnClickListener{
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        this.setContentView(R.layout.wishlist_page);
+        this.setContentView(R.layout.individual_wishlist_page);
         scanBtn = (Button)findViewById(R.id.scan_button);
         scanBtn.setOnClickListener(this);
 		//formatTxt = (TextView)findViewById(R.id.scan_format);

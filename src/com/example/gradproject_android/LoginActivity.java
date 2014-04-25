@@ -104,7 +104,7 @@ public class LoginActivity extends Activity {
 						if (exception == null) {
 			                  // Insert succeeded
 							if(!result.isEmpty()){
-								Intent myIntent = new Intent(LoginActivity.this, MainMenuList.class);
+								Intent myIntent = new Intent(LoginActivity.this, MainApplicationActivity.class);
 								LoginActivity.this.startActivity(myIntent);
 								System.out.println("Found user with that password");
 							}

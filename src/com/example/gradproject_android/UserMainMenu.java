@@ -23,9 +23,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
 
-public class HomeFragment extends ListFragment {
+public class UserMainMenu extends ListFragment {
 
-	public HomeFragment(){}
+	public UserMainMenu(){}
 
 	final ArrayList<String> wishlists = new ArrayList<String>();
 	private Button btnAddList;
@@ -48,7 +48,7 @@ public class HomeFragment extends ListFragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 
-		View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+		View rootView = inflater.inflate(R.layout.user_main_menu, container, false);
 		btnAddList = (Button)rootView.findViewById(R.id.addList_button);
 
 		myListView = (ListView) rootView.findViewById(android.R.id.list);
