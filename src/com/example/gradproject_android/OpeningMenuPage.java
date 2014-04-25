@@ -1,6 +1,5 @@
 package com.example.gradproject_android;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,9 +15,6 @@ public class OpeningMenuPage extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_menu);
-		
-		getActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM); 
-		getActionBar().setCustomView(R.layout.action_bar_layout);
 		
 		btnHost = (Button) findViewById(R.id.btnHost);
 		btnGuest = (Button) findViewById(R.id.btnGuest);
