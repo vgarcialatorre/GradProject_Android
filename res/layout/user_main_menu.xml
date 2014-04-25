@@ -29,24 +29,6 @@
         android:layout_centerVertical="true"
         android:background="#9dc8e0" />
 
-    <TextView
-        android:id="@+id/invited_lists"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/separator"
-        android:padding="10dip"
-        android:text="@string/invited_lists"
-        android:textColor="#999999"
-        android:textSize="25dip"
-        android:textStyle="bold" />
-
-    <ListView
-        android:id="@id/android:list"
-        android:layout_width="fill_parent"
-        android:layout_height="300dp"
-        android:layout_below="@+id/your_lists" >
-    </ListView>
-
     <View
         android:id="@+id/separator"
         android:layout_width="fill_parent"
@@ -59,7 +41,30 @@
         android:id="@+id/addList_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/invited_lists"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="13dp"
         android:text="@string/add_list" />
+
+    <ListView
+        android:id="@+id/android:liist"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_above="@+id/addList_button"
+        android:layout_alignParentLeft="true" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/invited_lists"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="10dip"
+        android:text="@string/invited_lists"
+        android:textColor="#999999"
+        android:textSize="25dip"
+        android:textStyle="bold" />
 
 </RelativeLayout>

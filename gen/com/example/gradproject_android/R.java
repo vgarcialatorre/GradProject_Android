@@ -65,8 +65,9 @@ public final class R {
     }
     public static final class id {
         public static final int Stork=0x7f0a0000;
-        public static final int action_settings=0x7f0a002f;
-        public static final int addList_button=0x7f0a002e;
+        public static final int action_settings=0x7f0a0030;
+        public static final int addList_button=0x7f0a002d;
+        public static final int android_liist=0x7f0a002e;
         public static final int baby_cloud=0x7f0a0001;
         public static final int btnGuest=0x7f0a0024;
         public static final int btnHost=0x7f0a0023;
@@ -92,7 +93,7 @@ public final class R {
         public static final int imageView7=0x7f0a000a;
         public static final int imageView8=0x7f0a000b;
         public static final int imageView9=0x7f0a000d;
-        public static final int invited_lists=0x7f0a002d;
+        public static final int invited_lists=0x7f0a002f;
         public static final int left_drawer=0x7f0a0015;
         public static final int list_slidermenu=0x7f0a0022;
         public static final int loginEmail=0x7f0a001c;

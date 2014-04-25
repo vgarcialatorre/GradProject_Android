@@ -13,10 +13,10 @@
     <string name="view_demo_app">View a demo app</string>
     <string name="event_host">Event Host</string>
     <string name="event_guest">Event Guest</string>
-    <string name="add_list">Add List</string>
+    <string name="add_list">Create List</string>
     <string name="drawer_open">Slider Menu Opened</string>
     <string name="drawer_close">Slider Menu Closed</string>
-    <string name="your_lists">Your Lists</string>
+    <string name="your_lists"><u>My Lists</u></string>
     <string name="invited_lists">Lists You\'ve Been Invited To</string>
     <string name="forgot_password"><u>Forgot Password?</u></string>
     <string name="register_me">Sign up for an M&amp;S account</string>

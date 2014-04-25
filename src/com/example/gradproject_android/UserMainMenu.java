@@ -121,7 +121,6 @@ public class UserMainMenu extends ListFragment {
 				}
 			}
 		});
-		System.out.println("inside2: " + wishlists);
 	}
 
 
