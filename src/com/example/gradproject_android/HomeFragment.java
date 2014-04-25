@@ -31,14 +31,17 @@ public class HomeFragment extends ListFragment {
 	private Button btnAddList;
 	private MobileServiceClient mClient;
 	private MobileServiceTable<Lists> listTable;
-	ArrayAdapter<String> adapter;
+	ArrayAdapter<String> yourListsAdapter;
+	ArrayAdapter<String> invitedListsAdapter;
 	private ListView myListView;
+	private ListView invitedListView;
 	
 	@Override
 	public void onCreate(Bundle savedInstance) {
 		super.onCreate(savedInstance);
 		
-		adapter = new ArrayAdapter<String>(this.getActivity(), R.layout.list_item, wishlists);
+		yourListsAdapter = new ArrayAdapter<String>(this.getActivity(), R.layout.list_item, wishlists);
+		invitedListsAdapter = new ArrayAdapter<String>(this.getActivity(), R.layout.list_item, wishlists);
 	}
 
 	@Override
@@ -49,6 +52,7 @@ public class HomeFragment extends ListFragment {
 		btnAddList = (Button)rootView.findViewById(R.id.addList_button);
 
 		myListView = (ListView) rootView.findViewById(android.R.id.list);
+//		invitedListView = (ListView) rootView.findViewById(R.id.list_invited_list);
 
 		getUsersLists();
 
@@ -59,7 +63,7 @@ public class HomeFragment extends ListFragment {
 	public void onActivityCreated(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onActivityCreated(savedInstanceState);
-		myListView.setAdapter(adapter);
+		myListView.setAdapter(yourListsAdapter);
 		
 	}
 	
@@ -108,7 +112,7 @@ public class HomeFragment extends ListFragment {
 					for(Lists item : result){
 						System.out.println("item: " + item.ListTitle);
 						wishlists.add(item.ListTitle);
-						adapter.notifyDataSetChanged();
+						yourListsAdapter.notifyDataSetChanged();
 					}
 					//onFinishLoading(wishlists);
 				}

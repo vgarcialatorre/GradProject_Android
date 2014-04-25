@@ -2,28 +2,48 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#999999"
+    android:background="#FFFFFF"
     android:orientation="vertical"
     android:padding="10dip" >
 
     <!-- View Title Label -->
 
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="fill_parent"
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:contentDescription="M&amp;S Logo"
+        android:src="@drawable/ms_logo" />
+
+    <Button
+        android:id="@+id/btnHost"
+        android:layout_width="194dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical|center_horizontal"
         android:layout_marginTop="20dip"
-        android:layout_weight="0.13"
-        android:background="#FFFFFF"
-        android:text="@string/my_account" />
+        android:background="#000000"
+        android:text="@string/event_host"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
 
     <Button
         android:id="@+id/btnGuest"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="194dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical|center_horizontal"
         android:layout_marginTop="20dip"
-        android:layout_weight="0.15"
-        android:background="#FFFFFF"
-        android:text="@string/guest_visit" />
+        android:background="#000000"
+        android:text="@string/event_guest"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="Gift Registry"
+        android:textSize="25sp"
+        android:paddingTop="10sp" />
 
 </LinearLayout>

@@ -15,7 +15,7 @@ public class OpeningPageActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.visit_type_selection);
+		setContentView(R.layout.opening_menu_page);
 		btnLogin = (Button) findViewById(R.id.btnLogin);
 		btnGuestVisit = (Button) findViewById(R.id.btnGuest);
 

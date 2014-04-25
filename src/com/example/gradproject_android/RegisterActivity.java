@@ -36,7 +36,7 @@ public class RegisterActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.register);
+		setContentView(R.layout.register_page);
 
 		// Importing all assets like buttons, text fields
 		inputFullName = (EditText) findViewById(R.id.registerName);
