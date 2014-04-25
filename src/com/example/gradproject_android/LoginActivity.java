@@ -5,8 +5,10 @@ import java.util.List;
 
 import DataModel.Users;
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -23,6 +25,8 @@ public class LoginActivity extends Activity {
 	EditText inputEmail;
 	EditText inputPassword;
 	TextView loginErrorMsg;
+    private Handler handler;
+
 
 	// JSON Response node names
 	private static String KEY_SUCCESS = "success";
@@ -32,6 +36,7 @@ public class LoginActivity extends Activity {
 	private static String KEY_NAME = "name";
 	private static String KEY_EMAIL = "email";
 	private static String KEY_CREATED_AT = "created_at";
+	private ProgressDialog progress;
 	
 	private MobileServiceTable<Users> userTable;
 	private MobileServiceClient mClient;
@@ -52,6 +57,9 @@ public class LoginActivity extends Activity {
 			e1.printStackTrace();
 		}
 		
+    	progress = new ProgressDialog(this);
+    	handler = new Handler();
+		
 		// Importing all assets like buttons, text fields
 		inputEmail = (EditText) findViewById(R.id.loginEmail);
 		inputPassword = (EditText) findViewById(R.id.loginPassword);
@@ -66,18 +74,38 @@ public class LoginActivity extends Activity {
 				final String email = inputEmail.getText().toString();
 				final String password = inputPassword.getText().toString();
 				System.out.println("on click");
-				Thread thread = new Thread(new Runnable(){
-				    @Override
-				    public void run() {
-				        try {
-							loginUser(email, password);
-				        } catch (Exception e) {
-				            e.printStackTrace();
-				        }
-				    }
-				});
+				loginUser(email, password);
 
-				thread.start(); 
+//				Thread thread = new Thread(new Runnable(){
+//				    @Override
+//				    public void run() {
+//				        try {
+//				        	
+//							loginUser(email, password);
+//				        } catch (Exception e) {
+//				            e.printStackTrace();
+//				        }
+//				    }
+//				});
+				Runnable runnable = new Runnable() {
+		            @Override
+		            public void run() {
+		                handler.post(new Runnable() { // This thread runs in the UI
+		                    @Override
+		                    public void run() {
+		                    	progress.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+		                    	progress.setIndeterminate(true);
+
+//		                    	progress.setIndeterminateDrawable(getResources()
+//		                                 .getDrawable(R.anim.progressbar_handler));
+		                    	progress.setCancelable(false);
+		                    	progress.show();
+
+		                    }
+		                });
+		            }
+		        };
+		        new Thread(runnable).start();
 			}
 		});
 
@@ -95,6 +123,8 @@ public class LoginActivity extends Activity {
 
 	private void loginUser(String theUsername, String thePassword)
 	{
+		
+    	
 		userTable.where().field("Username").eq(theUsername).and().field("Password").eq(thePassword).execute(new TableQueryCallback<Users>()
 				{
 
@@ -105,6 +135,7 @@ public class LoginActivity extends Activity {
 			                  // Insert succeeded
 							if(!result.isEmpty()){
 								Intent myIntent = new Intent(LoginActivity.this, MainApplicationActivity.class);
+								progress.dismiss();
 								LoginActivity.this.startActivity(myIntent);
 								System.out.println("Found user with that password");
 							}
@@ -113,6 +144,8 @@ public class LoginActivity extends Activity {
 								Toast t = Toast.makeText(getApplicationContext(), "Incorrect username/password",Toast.LENGTH_LONG);
 								t.setGravity(Gravity.CENTER_VERTICAL|Gravity.CENTER, 0, 0);
 								t.show();
+								progress.dismiss();
+
 							}
 			            } else {
 			                  // Insert failed
@@ -124,4 +157,6 @@ public class LoginActivity extends Activity {
 			
 				});
 	}
+
+	
 }
